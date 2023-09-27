@@ -17,8 +17,13 @@ const config = {
             assets: 'docs',
             fallback: 'index.html',
             precompress: false,
-		})
+		}),
+		paths: {
+            base: process.env.NODE_ENV === 'production' ? '/yt-for-me' : '',
+        },
 	}
 };
+
+
 
 export default config;
