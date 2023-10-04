@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -18,12 +18,9 @@ const config = {
             fallback: 'index.html',
             precompress: false,
 		}),
-		paths: {
-            base: process.env.NODE_ENV === 'production' ? '/yt-for-me' : '',
-        },
 		files: {
             assets: 'static',
-            lib: 'src/components',
+            lib: 'src/lib',
         },
 	}
 };
