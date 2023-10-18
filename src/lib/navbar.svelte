@@ -44,6 +44,8 @@
 
     nav {
         display: flex;
+        position: relative;
+        z-index: 51;
 
     }
 

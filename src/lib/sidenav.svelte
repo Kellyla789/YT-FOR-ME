@@ -11,10 +11,14 @@
 
 <style>
     section {
-        width:300px;
-    }
-
-    .fixed  {
-        display: fixed;
+        width: 300px;
+        height: 100dvh;
+        /* 100 device vertical height */
+        position: fixed;
+        padding-top: 64px;
+        padding-left: 8px;
+        padding-right: 8px;
+        z-index: 50;
+        top: 0;
     }
 </style>

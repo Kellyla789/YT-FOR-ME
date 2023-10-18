@@ -9,14 +9,17 @@
     $: show = isMobile || showSideNav;
 </script>
 
+
 <div bind:clientWidth={clientWidth} class="min-h-screen bg-slate-800 text-slate-100">
     <Navbar on:hamburger={() => showSideNav = !showSideNav}/>
-    <section class="flex flex-nowrap">
-    <Sidenav show={showSideNav} {isMobile}/>
-        <main>
-            {isMobile}
-            {clientWidth}
+    <Sidenav {show} />
+        <main class:phantom={!isMobile && showSideNav}>
             <slot />
         </main>
-    </section>
 </div>
+
+<style>
+    .phantom {
+        margin-left: 300px;
+    }
+</style>

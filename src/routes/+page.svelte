@@ -18,6 +18,7 @@
     avatar="bell-solid.svg"
     creator="Ocean Discovery"
     views="135k"
+    id={1}
     loading={loading}
     />
     <Thumb
@@ -26,6 +27,7 @@
     avatar="bell-solid.svg"
     creator="Robert Lasso"
     views="102k"
+    id={2}
     loading={loading}
     />
     <Thumb />
